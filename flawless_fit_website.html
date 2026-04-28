@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flawless Fit Tailoring & Alteration Specialist</title>
+  <meta name="description" content="Flawless Fit Tailoring & Alteration Specialist offers professional tailoring, clothing alterations, hemming, repairs, and formal wear adjustments. Call 289-231-3050." />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f1f1f;
+      background: #fffaf5;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background: #111111;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #d6b06d;
+    }
+
+    .hero {
+      min-height: 78vh;
+      padding: 90px 8%;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 50px;
+      background: linear-gradient(135deg, #fffaf5 0%, #f5e8d6 100%);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      line-height: 1.05;
+      margin-bottom: 20px;
+      color: #111111;
+    }
+
+    .hero p {
+      font-size: 1.18rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .btn-primary {
+      background: #111111;
+      color: white;
+    }
+
+    .btn-secondary {
+      border: 2px solid #111111;
+      color: #111111;
+      background: transparent;
+    }
+
+    .hero-card {
+      background: white;
+      border-radius: 28px;
+      padding: 38px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .hero-card h2 {
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+
+    .hero-card li::before {
+      content: "✓";
+      color: #9b6b24;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 14px;
+      color: #111111;
+    }
+
+    .section-intro {
+      max-width: 720px;
+      color: #555;
+      margin-bottom: 38px;
+      font-size: 1.05rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 28px;
+      border-radius: 22px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+
+    .about {
+      background: #111111;
+      color: white;
+    }
+
+    .about .section-title,
+    .about .section-intro {
+      color: white;
+    }
+
+    .about-box {
+      max-width: 850px;
+      font-size: 1.1rem;
+      color: #f4f4f4;
+    }
+
+    .contact {
+      text-align: center;
+      background: #f5e8d6;
+    }
+
+    .contact-card {
+      max-width: 720px;
+      margin: 0 auto;
+      background: white;
+      padding: 42px;
+      border-radius: 28px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .phone {
+      display: inline-block;
+      font-size: clamp(1.5rem, 4vw, 2.3rem);
+      font-weight: 800;
+      margin: 22px 0;
+      color: #111111;
+    }
+
+    footer {
+      background: #111111;
+      color: white;
+      text-align: center;
+      padding: 24px 8%;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Flawless Fit</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Tailoring made for the perfect fit.</h1>
+        <p>Flawless Fit Tailoring & Alteration Specialist provides careful clothing alterations, repairs, and tailoring services to help your clothes look and feel just right.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="tel:12892313050">Call 289-231-3050</a>
+          <a class="btn btn-secondary" href="#services">View Services</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>Professional alterations for everyday and special occasions.</h2>
+        <ul>
+          <li>Hemming and resizing</li>
+          <li>Dress and formal wear alterations</li>
+          <li>Clothing repairs</li>
+          <li>Fit adjustments</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Services</h2>
+      <p class="section-intro">Whether your clothing needs a small adjustment or a more detailed alteration, each piece is handled with care and attention to fit.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Clothing Alterations</h3>
+          <p>Adjustments for pants, dresses, skirts, shirts, jackets, and everyday clothing.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Hemming & Resizing</h3>
+          <p>Shortening, lengthening, taking in, or letting out clothing for a more comfortable fit.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Repairs</h3>
+          <p>Simple clothing repairs to help extend the life of your favourite pieces.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Formal Wear</h3>
+          <p>Careful alterations for dresses, suits, and special occasion outfits.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Custom Fit Support</h3>
+          <p>Personalized adjustments to improve shape, comfort, and overall appearance.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Consultation</h3>
+          <p>Call to discuss your alteration needs and next steps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <p class="section-intro">Flawless Fit Tailoring & Alteration Specialist is focused on quality, detail, and helping customers feel confident in what they wear.</p>
+      <div class="about-box">
+        <p>From everyday clothing to special occasion pieces, the goal is to provide reliable alteration services with a professional finish. Every garment is treated with care so customers can enjoy a cleaner fit and a more polished look.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-card">
+        <h2 class="section-title">Contact</h2>
+        <p>Ready to ask about an alteration or tailoring service? Call today.</p>
+        <a class="phone" href="tel:12892313050">289-231-3050</a>
+        <div>
+          <a class="btn btn-primary" href="tel:12892313050">Call Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Flawless Fit Tailoring & Alteration Specialist. All rights reserved.</p>
+  </footer>
+</body>
+</html>
